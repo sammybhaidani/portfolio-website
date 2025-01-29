@@ -14,12 +14,39 @@
     <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
   </head>
   <body class="font-[Istok_Web] bg-[rgb(250,250,250)]">
-    <header
-      class="fixed top-0 left-0 right-0 w-full w-4/5 backdrop-blur-lg bg[linear-gradient(to_bottom,_rgba(255,255,255,0.8),_rgba(0,0,0,0.1))]"
-    >
+    <header class="fixed top-0 left-0 right-0 w-full w-4/5 z-20 h-[40vh]">
+      <div class="w-full rounded-none">
+        <div class="h-full">
+          <div
+            class="absolute inset-0 z-1 backdrop-blur-[0.078125px] [mask-image:linear-gradient(to_top,rgba(0,0,0,0)_0%,rgba(0,0,0,1)_12.5%,rgba(0,0,0,1)_25%,rgba(0,0,0,0)_37.5%)]"
+          ></div>
+          <div
+            class="absolute inset-0 z-2 backdrop-blur-[0.15625px] [mask-image:linear-gradient(to_top,rgba(0,0,0,0)_12.5%,rgba(0,0,0,1)_25%,rgba(0,0,0,1)_37.5%,rgba(0,0,0,0)_50%)]"
+          ></div>
+          <div
+            class="absolute inset-0 z-3 backdrop-blur-[0.3125px] [mask-image:linear-gradient(to_top,rgba(0,0,0,0)_25%,rgba(0,0,0,1)_37.5%,rgba(0,0,0,1)_50%,rgba(0,0,0,0)_62.5%)]"
+          ></div>
+          <div
+            class="absolute inset-0 z-4 backdrop-blur-[0.625px] [mask-image:linear-gradient(to_top,rgba(0,0,0,0)_37.5%,rgba(0,0,0,1)_50%,rgba(0,0,0,1)_62.5%,rgba(0,0,0,0)_75%)]"
+          ></div>
+          <div
+            class="absolute inset-0 z-5 backdrop-blur-[1.25px] [mask-image:linear-gradient(to_top,rgba(0,0,0,0)_50%,rgba(0,0,0,1)_62.5%,rgba(0,0,0,1)_75%,rgba(0,0,0,0)_87.5%)]"
+          ></div>
+          <div
+            class="absolute inset-0 z-6 backdrop-blur-[2.5px] [mask-image:linear-gradient(to_top,rgba(0,0,0,0)_62.5%,rgba(0,0,0,1)_75%,rgba(0,0,0,1)_87.5%,rgba(0,0,0,0)_100%)]"
+          ></div>
+          <div
+            class="absolute inset-0 z-7 backdrop-blur-[5px] [mask-image:linear-gradient(to_top,rgba(0,0,0,0)_75%,rgba(0,0,0,1)_87.5%,rgba(0,0,0,1)_100%)]"
+          ></div>
+          <div
+            class="absolute inset-0 z-8 backdrop-blur-[10px] [mask-image:linear-gradient(to_top,rgba(0,0,0,0)_87.5%,rgba(0,0,0,1)_100%,rgba(0,0,0,1)_100%)]"
+          ></div>
+        </div>
+      </div>
+
       <nav
         id="navbar"
-        class="flex justify-between items-center container mx-auto transition-all duration-300 mt-5 z-50 text-lg text-zinc-900 font-extra-bold border-1 rounded-4xl border-gray-300 border-opacity-100 bg-neutral-100"
+        class="flex justify-between items-center container mx-auto transition-all duration-300 mt-5 relative z-50 text-lg text-zinc-900 font-extra-bold border-1 rounded-4xl border-gray-300 border-opacity-100 bg-neutral-100"
       >
         <span class="text-lg text-zinc-900 font-extra-bold ml-3">Logo</span>
         <ul class="flex justify-end gap-15 p-6">
