@@ -2,12 +2,21 @@ const navbar = document.getElementById("navbar");
 const scrollThreshold = 5;
 
 window.addEventListener("scroll", () => {
-  console.log("scroll top: " + document.documentElement.scrollTop);
-  console.log("scroll Y: " + window.scrollY);
+  //   console.log("scroll top: " + document.documentElement.scrollTop);
+  //   console.log("scroll Y: " + window.scrollY);
+
   if (window.scrollY > scrollThreshold) {
-    navbar.classList.add("rounded-4xl", "drop-shadow-xl", "bg-neutral-100");
+    navbar.classList.add(
+      "drop-shadow-xl",
+      "bg-neutral-100",
+      "border-transparent"
+    );
   } else {
-    navbar.classList.remove("rounded-4xl", "drop-shadow-xl", "bg-neutral-100");
+    navbar.classList.remove(
+      "drop-shadow-xl",
+      "bg-neutral-100",
+      "border-transparent"
+    );
   }
 });
 
