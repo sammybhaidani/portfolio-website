@@ -6,17 +6,9 @@ window.addEventListener("scroll", () => {
   //   console.log("scroll Y: " + window.scrollY);
 
   if (window.scrollY > scrollThreshold) {
-    navbar.classList.add(
-      "drop-shadow-xl",
-      "bg-neutral-100",
-      "border-transparent"
-    );
+    navbar.classList.add("drop-shadow-xl", "border-transparent");
   } else {
-    navbar.classList.remove(
-      "drop-shadow-xl",
-      "bg-neutral-100",
-      "border-transparent"
-    );
+    navbar.classList.remove("drop-shadow-xl", "border-transparent");
   }
 });
 
