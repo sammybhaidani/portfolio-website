@@ -16,7 +16,7 @@
       "alt": "",
       "link": "https://github.com/",
       "demo": "https://github.com/",
-      "technologies": ["HTML", "CSS", "JavaScript"]
+      "technologies": ["HTML", "CSS", "JavaScript", "React"]
     },
     {
       "title": "Third project",
@@ -25,7 +25,7 @@
       "alt": "",
       "link": "https://github.com/",
       "demo": "https://github.com/",
-      "technologies": ["HTML", "CSS", "JavaScript"]
+      "technologies": ["HTML", "CSS", "JavaScript", "React", "PHP"]
     }
   ]
 }
