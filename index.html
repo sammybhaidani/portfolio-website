@@ -10,6 +10,13 @@
       href="https://fonts.googleapis.com/css2?family=Istok+Web:ital,wght@0,400;0,700;1,400;1,700&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <script defer src="script.js"></script>
     <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
   </head>
@@ -162,17 +169,23 @@
               <div class="flex justify-end gap-4">
                 <!-- Source Code Link -->
                 <a
-                  class="rounded-lg bg-white hover:bg-stone-200 px-3 py-1.5 text-sm font-medium text-black-300 transition-colors duration-150"
+                  class="group rounded-lg bg-white hover:bg-stone-200 px-3 py-1.5 text-sm font-medium text-black-300 transition-colors duration-150"
                   href="#"
                 >
                   <span>Source Code</span>
+                  <i
+                    class="ml-1 fa-solid fa-arrow-right transition-transform group-hover:translate-x-1"
+                  ></i>
                 </a>
                 <!-- Live Demo Link -->
                 <a
-                  class="rounded-lg bg-slate-800 hover:bg-slate-900 px-3 py-1.5 text-sm font-medium text-slate-300 transition-colors duration-150"
+                  class="group rounded-lg bg-slate-800 hover:bg-slate-900 px-3 py-1.5 text-sm font-medium text-slate-300 transition-colors duration-150"
                   href=""
-                  ><span>Live Demo</span></a
-                >
+                  ><span>Live Demo</span
+                  ><i
+                    class="ml-2 fa-solid fa-arrow-right transition-transform group-hover:translate-x-1"
+                  ></i
+                ></a>
               </div>
             </div>
           </div>
