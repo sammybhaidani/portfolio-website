@@ -34,15 +34,22 @@ fetch("projects.json")
 
     projects.forEach((project) => {
       const projectsContainer = document.getElementById("projects-container");
-      // Create card container
-      //   const card = document.createElement("div");
-      //   card.classList.add("project-card", "flex", "flex-col");
 
-      // Create first column
+      console.log(project.technologies);
 
-      //   Give card correct class names
-      //   console.log(card);
-      //   projectsContainer.appendChild(card);
+      //   const technologyList = document.createElement("ul");
+      //   technologyList.classList.add();
+
+      //   for (const tech of project.technologies) {
+      //     console.log(tech);
+      //     const techListItem = document.createElement("li");
+      //     techListItem.textContent = tech;
+      //     console.log(techListItem);
+      //   }
+
+      const techList = project.technologies
+        .map((tech) => `<li class="border rounded-3xl px-2">${tech}</li>`)
+        .join("");
 
       projectsContainer.innerHTML += `<div
           class="bg-neutral-100 p-6 pb-8 rounded-3xl transition-all duration-300"
@@ -56,9 +63,7 @@ fetch("projects.json")
               <p class="project-description">${project.description}</p>
               <!-- Technologies -->
               <ul class="technologies flex gap-3 mt-auto">
-                <li class="border rounded-3xl px-2">HTML</li>
-                <li class="border rounded-3xl px-2">CSS</li>
-                <li class="border rounded-3xl px-2">JavaScript</li>
+                ${techList}
               </ul>
             </div>
             <div class="flex flex-col gap-4">
