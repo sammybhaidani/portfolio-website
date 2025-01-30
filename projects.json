@@ -1,0 +1,25 @@
+{
+  "projects": [
+    {
+      "title": "First project",
+      "description": "This is a description of the project I worked on",
+      "image": "https://placehold.co/600x400",
+      "alt": "",
+      "link": "https://github.com/"
+    },
+    {
+      "title": "Second project",
+      "description": "This is a description of the second project I worked on",
+      "image": "images/project_2.png",
+      "alt": "",
+      "link": ""
+    },
+    {
+      "title": "Third project",
+      "description": "This is a description of the third project I worked on",
+      "image": "images/project_3.png",
+      "alt": "",
+      "link": ""
+    }
+  ]
+}
