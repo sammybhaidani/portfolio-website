@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" class="scroll-smooth">
+<html lang="en" class="scroll-smooth scroll-p-[]">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -21,39 +21,38 @@
     <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
   </head>
   <body class="font-[Istok_Web] bg-[rgb(250,250,250)]">
-    <header class="fixed top-0 left-0 right-0 w-full w-4/5 z-20 h-[35vh]">
-      <div class="w-full rounded-none">
-        <div class="h-full">
-          <div
-            class="absolute inset-0 z-1 backdrop-blur-[0.078125px] [mask-image:linear-gradient(to_top,rgba(0,0,0,0)_0%,rgba(0,0,0,1)_12.5%,rgba(0,0,0,1)_25%,rgba(0,0,0,0)_37.5%)]"
-          ></div>
-          <div
-            class="absolute inset-0 z-2 backdrop-blur-[0.15625px] [mask-image:linear-gradient(to_top,rgba(0,0,0,0)_12.5%,rgba(0,0,0,1)_25%,rgba(0,0,0,1)_37.5%,rgba(0,0,0,0)_50%)]"
-          ></div>
-          <div
-            class="absolute inset-0 z-3 backdrop-blur-[0.3125px] [mask-image:linear-gradient(to_top,rgba(0,0,0,0)_25%,rgba(0,0,0,1)_37.5%,rgba(0,0,0,1)_50%,rgba(0,0,0,0)_62.5%)]"
-          ></div>
-          <div
-            class="absolute inset-0 z-4 backdrop-blur-[0.625px] [mask-image:linear-gradient(to_top,rgba(0,0,0,0)_37.5%,rgba(0,0,0,1)_50%,rgba(0,0,0,1)_62.5%,rgba(0,0,0,0)_75%)]"
-          ></div>
-          <div
-            class="absolute inset-0 z-5 backdrop-blur-[1.25px] [mask-image:linear-gradient(to_top,rgba(0,0,0,0)_50%,rgba(0,0,0,1)_62.5%,rgba(0,0,0,1)_75%,rgba(0,0,0,0)_87.5%)]"
-          ></div>
-          <div
-            class="absolute inset-0 z-6 backdrop-blur-[2.5px] [mask-image:linear-gradient(to_top,rgba(0,0,0,0)_62.5%,rgba(0,0,0,1)_75%,rgba(0,0,0,1)_87.5%,rgba(0,0,0,0)_100%)]"
-          ></div>
-          <div
-            class="absolute inset-0 z-7 backdrop-blur-[5px] [mask-image:linear-gradient(to_top,rgba(0,0,0,0)_75%,rgba(0,0,0,1)_87.5%,rgba(0,0,0,1)_100%)]"
-          ></div>
-          <div
-            class="absolute inset-0 z-8 backdrop-blur-[10px] [mask-image:linear-gradient(to_top,rgba(0,0,0,0)_87.5%,rgba(0,0,0,1)_100%,rgba(0,0,0,1)_100%)]"
-          ></div>
-        </div>
+    <div class="w-full rounded-none fixed inset-0 h-[350px]">
+      <div class="h-full">
+        <div
+          class="absolute inset-0 z-1 backdrop-blur-[0.078125px] [mask-image:linear-gradient(to_top,rgba(0,0,0,0)_0%,rgba(0,0,0,1)_12.5%,rgba(0,0,0,1)_25%,rgba(0,0,0,0)_37.5%)]"
+        ></div>
+        <div
+          class="absolute inset-0 z-2 backdrop-blur-[0.15625px] [mask-image:linear-gradient(to_top,rgba(0,0,0,0)_12.5%,rgba(0,0,0,1)_25%,rgba(0,0,0,1)_37.5%,rgba(0,0,0,0)_50%)]"
+        ></div>
+        <div
+          class="absolute inset-0 z-3 backdrop-blur-[0.3125px] [mask-image:linear-gradient(to_top,rgba(0,0,0,0)_25%,rgba(0,0,0,1)_37.5%,rgba(0,0,0,1)_50%,rgba(0,0,0,0)_62.5%)]"
+        ></div>
+        <div
+          class="absolute inset-0 z-4 backdrop-blur-[0.625px] [mask-image:linear-gradient(to_top,rgba(0,0,0,0)_37.5%,rgba(0,0,0,1)_50%,rgba(0,0,0,1)_62.5%,rgba(0,0,0,0)_75%)]"
+        ></div>
+        <div
+          class="absolute inset-0 z-5 backdrop-blur-[1.25px] [mask-image:linear-gradient(to_top,rgba(0,0,0,0)_50%,rgba(0,0,0,1)_62.5%,rgba(0,0,0,1)_75%,rgba(0,0,0,0)_87.5%)]"
+        ></div>
+        <div
+          class="absolute inset-0 z-6 backdrop-blur-[2.5px] [mask-image:linear-gradient(to_top,rgba(0,0,0,0)_62.5%,rgba(0,0,0,1)_75%,rgba(0,0,0,1)_87.5%,rgba(0,0,0,0)_100%)]"
+        ></div>
+        <div
+          class="absolute inset-0 z-7 backdrop-blur-[5px] [mask-image:linear-gradient(to_top,rgba(0,0,0,0)_75%,rgba(0,0,0,1)_87.5%,rgba(0,0,0,1)_100%)]"
+        ></div>
+        <div
+          class="absolute inset-0 z-8 backdrop-blur-[10px] [mask-image:linear-gradient(to_top,rgba(0,0,0,0)_87.5%,rgba(0,0,0,1)_100%,rgba(0,0,0,1)_100%)]"
+        ></div>
       </div>
-
+    </div>
+    <header class="fixed top-0 left-0 right-0 w-full w-4/5 z-20">
       <nav
         id="navbar"
-        class="flex justify-between items-center container mx-auto max-w-5xl transition-all duration-300 mt-5 relative z-50 text-lg text-zinc-900 font-extra-bold border-1 rounded-4xl border-gray-300 border-opacity-100 bg-neutral-100"
+        class="flex justify-between items-center container mx-auto max-w-5xl transition-all duration-300 mt-10 relative z-50 text-lg text-zinc-900 font-extra-bold border-1 rounded-4xl border-gray-300 border-opacity-100 bg-neutral-100"
       >
         <span class="text-lg text-zinc-900 font-extra-bold ml-3">Logo</span>
         <ul class="flex justify-end gap-15 p-6">
@@ -65,151 +64,161 @@
       </nav>
     </header>
 
-    <section id="about" class="min-h-screen pt-60  mb-10">
-    <div class="container mx-auto max-w-5xl">
+    <section id="about" class="min-h-screen mb-10 mt-[35vh]">
+      <div class="container mx-auto max-w-5xl">
+        <div class="flex items-center">
+          <div>
+            <h1
+              class="flex text-5xl text-zinc-800 font-bold tracking-tight leading-none gap-4"
+            >
+              <span class="first flex">
+                <span
+                  class="letter opacity-0 blur-sm translate-y-5 inline-block transition-all duration-300 ease-out"
+                  >h</span
+                >
+                <span
+                  class="letter opacity-0 blur-sm translate-y-5 inline-block transition-all duration-300 ease-out"
+                  >e</span
+                >
+                <span
+                  class="letter opacity-0 blur-sm translate-y-5 inline-block transition-all duration-300 ease-out"
+                  >l</span
+                >
+                <span
+                  class="letter opacity-0 blur-sm translate-y-5 inline-block transition-all duration-300 ease-out"
+                  >l</span
+                >
+                <span
+                  class="letter opacity-0 blur-sm translate-y-5 inline-block transition-all duration-300 ease-out"
+                  >o</span
+                >
+              </span>
 
-        
-        <h1
-          class="flex text-5xl text-zinc-800 font-bold tracking-tight leading-none gap-4"
-        >
-          <span class="first flex">
-            <span
-              class="letter opacity-0 blur-sm translate-y-5 inline-block transition-all duration-300 ease-out"
-              >h</span
-            >
-            <span
-              class="letter opacity-0 blur-sm translate-y-5 inline-block transition-all duration-300 ease-out"
-              >e</span
-            >
-            <span
-              class="letter opacity-0 blur-sm translate-y-5 inline-block transition-all duration-300 ease-out"
-              >l</span
-            >
-            <span
-              class="letter opacity-0 blur-sm translate-y-5 inline-block transition-all duration-300 ease-out"
-              >l</span
-            >
-            <span
-              class="letter opacity-0 blur-sm translate-y-5 inline-block transition-all duration-300 ease-out"
-              >o</span
-            >
-          </span>
-  
-          <span class="last flex">
-            <span
-              class="letter opacity-0 blur-sm translate-y-5 inline-block transition-all duration-300 ease-out"
-              >t</span
-            >
-            <span
-              class="letter opacity-0 blur-sm translate-y-5 inline-block transition-all duration-300 ease-out"
-              >h</span
-            >
-            <span
-              class="letter opacity-0 blur-sm translate-y-5 inline-block transition-all duration-300 ease-out"
-              >e</span
-            >
-            <span
-              class="letter opacity-0 blur-sm translate-y-5 inline-block transition-all duration-300 ease-out"
-              >r</span
-            >
-            <span
-              class="letter opacity-0 blur-sm translate-y-5 inline-block transition-all duration-300 ease-out"
-              >e</span
-            >
-            <span
-              class="letter opacity-0 blur-sm translate-y-5 inline-block transition-all duration-300 ease-out"
-              >!</span
-            >
-            <span
-              class="letter opacity-0 blur-sm translate-y-5 inline-block transition-all duration-300 ease-out"
-            ></span>
-            <span
-              class="letter opacity-0 blur-sm translate-y-5 inline-block transition-all duration-300 ease-out"
-            ></span>
-          </span>
-        </h1>
-  
-        <div class="introduction flex flex-col gap-6 mt-6">
-          <p class="description text-lg max-w-1/2">
-            I'm <span class="font-bold">Sammy Bhaidani</span>, a developer with a
-            passion for crafting intuitive interfaces and writing elegant code to
-            build seamless digital experiences on the web
-          </p>
-          <a class="resume" href="">Resume</a>
-    </div>
+              <span class="last flex">
+                <span
+                  class="letter opacity-0 blur-sm translate-y-5 inline-block transition-all duration-300 ease-out"
+                  >t</span
+                >
+                <span
+                  class="letter opacity-0 blur-sm translate-y-5 inline-block transition-all duration-300 ease-out"
+                  >h</span
+                >
+                <span
+                  class="letter opacity-0 blur-sm translate-y-5 inline-block transition-all duration-300 ease-out"
+                  >e</span
+                >
+                <span
+                  class="letter opacity-0 blur-sm translate-y-5 inline-block transition-all duration-300 ease-out"
+                  >r</span
+                >
+                <span
+                  class="letter opacity-0 blur-sm translate-y-5 inline-block transition-all duration-300 ease-out"
+                  >e</span
+                >
+                <span
+                  class="letter opacity-0 blur-sm translate-y-5 inline-block transition-all duration-300 ease-out"
+                  >!</span
+                >
+                <span
+                  class="letter opacity-0 blur-sm translate-y-5 inline-block transition-all duration-300 ease-out"
+                ></span>
+                <span
+                  class="letter opacity-0 blur-sm translate-y-5 inline-block transition-all duration-300 ease-out"
+                ></span>
+              </span>
+            </h1>
+
+            <div class="introduction flex flex-col gap-6 mt-6">
+              <p class="description text-lg max-w-1/2">
+                I'm <span class="font-bold">Sammy Bhaidani</span>, a developer
+                with a passion for crafting intuitive interfaces and writing
+                elegant code to build seamless digital experiences on the web
+              </p>
+              <a class="resume" href="">Resume</a>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
 
     <section id="projects" class="min-h-screen mb-20">
-        <div class="container max-w-5xl mx-auto">
-            <h3 class="text-2xl font-bold">Projects</h3>
-            <!-- Cards container -->
-            <div id="projects-container" class="flex flex-col gap-8">
-              <!-- Card one -->
-              <div
-                class="bg-neutral-100 p-6 pb-8 rounded-3xl transition-all duration-300"
-              >
-                <!-- First and Second columns -->
-                <div class="flex justify-between">
-                  <!-- First column -->
-                  <!-- Text and technologies -->
-                  <div class="flex flex-col gap-5">
-                    <h3 class="project-title text-xl">Project Title</h3>
-                    <p class="project-description">This is a project description</p>
-                    <!-- Technologies -->
-                    <ul class="technologies flex gap-3 mt-auto">
-                      <li class="border rounded-3xl px-2">HTML</li>
-                      <li class="border rounded-3xl px-2">CSS</li>
-                      <li class="border rounded-3xl px-2">JavaScript</li>
-                    </ul>
-                  </div>
-                  <div class="flex flex-col gap-4">
-                    <!-- Image and buttons -->
-                    <img
-                      class="project-image"
-                      src=""
-                      alt=""
-                      width="300"
-                      height="200"
-                    />
-                    <div class="flex justify-center gap-4">
-                      <!-- Source Code Link -->
-                      <a
-                        class="group rounded-lg bg-white hover:bg-stone-200 px-3 py-1.5 text-sm font-medium text-black-300 transition-colors duration-300"
-                        href="#"
-                      >
-                        <span>Source Code</span>
-                        <i
-                          class="ml-2 fa-solid fa-arrow-right transition-transform group-hover:translate-x-1"
-                        ></i>
-                      </a>
-                      <!-- Live Demo Link -->
-                      <a
-                        class="group rounded-lg bg-slate-800 hover:bg-slate-900 px-3 py-1.5 text-sm font-medium text-slate-300 transition-colors duration-300"
-                        href=""
-                        ><span>Live Demo</span
-                        ><i
-                          class="ml-2 fa-solid fa-arrow-right transition-transform duration-300 group-hover:translate-x-1"
-                        ></i
-                      ></a>
-                    </div>
-                  </div>
+      <div class="container max-w-5xl mx-auto">
+        <h3 class="text-2xl font-bold">Projects</h3>
+        <!-- Cards container -->
+        <div id="projects-container" class="flex flex-col gap-8">
+          <!-- Card one -->
+          <div
+            class="bg-neutral-100 p-6 pb-8 rounded-3xl transition-all duration-300"
+          >
+            <!-- First and Second columns -->
+            <div class="flex justify-between">
+              <!-- First column -->
+              <!-- Text and technologies -->
+              <div class="flex flex-col gap-5">
+                <h3 class="project-title text-xl">Project Title</h3>
+                <p class="project-description">This is a project description</p>
+                <!-- Technologies -->
+                <ul class="technologies flex gap-3 mt-auto">
+                  <li class="border rounded-3xl px-2">HTML</li>
+                  <li class="border rounded-3xl px-2">CSS</li>
+                  <li class="border rounded-3xl px-2">JavaScript</li>
+                </ul>
+              </div>
+              <div class="flex flex-col gap-4">
+                <!-- Image and buttons -->
+                <img
+                  class="project-image"
+                  src=""
+                  alt=""
+                  width="300"
+                  height="200"
+                />
+                <div class="flex justify-center gap-4">
+                  <!-- Source Code Link -->
+                  <a
+                    class="group rounded-lg bg-white hover:bg-stone-200 px-3 py-1.5 text-sm font-medium text-black-300 transition-colors duration-300"
+                    href="#"
+                  >
+                    <span>Source Code</span>
+                    <i
+                      class="ml-2 fa-solid fa-arrow-right transition-transform group-hover:translate-x-1"
+                    ></i>
+                  </a>
+                  <!-- Live Demo Link -->
+                  <a
+                    class="group rounded-lg bg-slate-800 hover:bg-slate-900 px-3 py-1.5 text-sm font-medium text-slate-300 transition-colors duration-300"
+                    href=""
+                    ><span>Live Demo</span
+                    ><i
+                      class="ml-2 fa-solid fa-arrow-right transition-transform duration-300 group-hover:translate-x-1"
+                    ></i
+                  ></a>
                 </div>
               </div>
             </div>
+          </div>
         </div>
+      </div>
     </section>
-    <section id="contact" class="bg-slate-800">
-        <div id="form-container" class="container max-w-2xl mx-auto p-5 text-white">
-            <h3 class="text-2xl font-bold text-center">contact me below!</h3>
-            <form action="" class="flex flex-col gap-2">
-                <label for="name">name</label>
-                <input class="bg-stone-200 rounded" type="text" name="" id="name">
-                <label for="email">email</label>
-                <input class="bg-stone-200 rounded" type="text">
-                <label for="message">message</label>
-                <textarea class="bg-stone-200 rounded" name="" id="message"></textarea>
-            </form>
-        </div>
+    <section id="contact" class="min-h-screen bg-slate-800">
+      <div
+        id="form-container"
+        class="container max-w-2xl mx-auto p-5 text-white"
+      >
+        <h3 class="text-2xl font-bold text-center">contact me below!</h3>
+        <form action="" class="flex flex-col gap-2">
+          <label for="name">name</label>
+          <input class="bg-stone-200 rounded" type="text" name="" id="name" />
+          <label for="email">email</label>
+          <input class="bg-stone-200 rounded" type="text" />
+          <label for="message">message</label>
+          <textarea
+            class="bg-stone-200 rounded"
+            name=""
+            id="message"
+          ></textarea>
+        </form>
+      </div>
     </section>
   </body>
 </html>
