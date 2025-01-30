@@ -123,22 +123,59 @@
         <p class="description text-lg max-w-1/2">
           I'm <span class="font-bold">Sammy Bhaidani</span>, a developer with a
           passion for crafting intuitive interfaces and writing elegant code to
-          build seamless digital experiences on the web.
+          build seamless digital experiences on the web
         </p>
         <a class="resume" href="">Resume</a>
       </div>
       <div class="projects"></div>
     </section>
     <section class="projects container mx-auto">
-      <h3>Projects</h3>
-      <div class="cards-container grid gap-6 lg:grid-cols-2 group">
-        <div class="project-card">
-          <p class="project-title"></p>
-          <img class="project-image" src="" alt="" />
-          <p class="project-description"></p>
-          <a href="">Source Code</a>
-          <a href="">Live</a>
-          <ul class="tools-used"></ul>
+      <h3 class="text-2xl font-bold">Projects</h3>
+
+      <!-- Cards container -->
+      <div class="cards-container flex flex-col">
+        <!-- Card one -->
+        <div class="project-card bg-neutral-100 p-6 pb-8 rounded-3xl">
+          <!-- First and Second columns -->
+          <div class="flex justify-between">
+            <!-- First column -->
+            <!-- Text and technologies -->
+            <div class="flex flex-col gap-5">
+              <h3 class="project-title text-xl">Project Title</h3>
+              <p class="project-description">This is a project description</p>
+              <!-- Technologies -->
+              <ul class="technologies flex gap-3 mt-auto">
+                <li class="border rounded-3xl px-2">HTML</li>
+                <li class="border rounded-3xl px-2">CSS</li>
+                <li class="border rounded-3xl px-2">JavaScript</li>
+              </ul>
+            </div>
+            <div class="flex flex-col gap-4">
+              <!-- Image and buttons -->
+              <img
+                class="project-image"
+                src="https://placehold.co/600x400"
+                alt=""
+                width="300"
+                height="200"
+              />
+              <div class="flex justify-end gap-4">
+                <!-- Source Code Link -->
+                <a
+                  class="rounded-lg bg-white hover:bg-stone-200 px-3 py-1.5 text-sm font-medium text-black-300 transition-colors duration-150"
+                  href="#"
+                >
+                  <span>Source Code</span>
+                </a>
+                <!-- Live Demo Link -->
+                <a
+                  class="rounded-lg bg-slate-800 hover:bg-slate-900 px-3 py-1.5 text-sm font-medium text-slate-300 transition-colors duration-150"
+                  href=""
+                  ><span>Live Demo</span></a
+                >
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </section>
