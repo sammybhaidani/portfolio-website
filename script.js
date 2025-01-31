@@ -1,3 +1,22 @@
+const navLinks = document.querySelectorAll(".nav-link");
+
+function setActiveLink() {
+  navLinks.forEach((link) => {
+    link.classList.remove("font-bold");
+
+    if (window.location.hash === link.getAttribute("href")) {
+      link.classList.add("font-bold");
+    }
+  });
+}
+
+setActiveLink();
+window.addEventListener("hashchange", setActiveLink);
+
+if (!window.location.hash) {
+  navLinks[0].classList.add("font-bold");
+}
+
 const navbar = document.getElementById("navbar");
 const scrollThreshold = 5;
 
