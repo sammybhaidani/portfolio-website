@@ -52,52 +52,58 @@ fetch("projects.json")
         .join("");
 
       projectsContainer.innerHTML += `<div
-          class="bg-neutral-100 p-6 pb-8 rounded-3xl transition-all duration-300"
-        >
-          <!-- First and Second columns -->
-          <div class="flex justify-between">
-            <!-- First column -->
-            <!-- Text and technologies -->
-            <div class="flex flex-col gap-5">
-              <h3 class="project-title text-xl">${project.title}</h3>
-              <p class="project-description">${project.description}</p>
-              <!-- Technologies -->
-              <ul class="technologies flex gap-3 mt-auto">
-                ${techList}
-              </ul>
-            </div>
-            <div class="flex flex-col gap-4">
-              <!-- Image and buttons -->
-              <img
-                class="project-image"
-                src="${project.image}"
-                alt="${project.alt}"
-                width="300"
-                height="200"
-              />
-              <div class="flex justify-center gap-4">
-                <!-- Source Code Link -->
-                <a
-                  class="group rounded-lg bg-white hover:bg-stone-200 px-3 py-1.5 text-sm font-medium text-black-300 transition-colors duration-300"
-                  href="${project.link}"
+            class="bg-neutral-100 p-6 sm:p-8 pb-8 rounded-3xl transition-all duration-300 hover:shadow-lg w-full max-w-5xl mx-auto"
+          >
+            <!-- First and Second columns -->
+            <div
+              class="flex flex-col sm:flex-row gap-5 sm:gap-4 justify-between"
+            >
+              <!-- First column -->
+              <!-- Text and technologies -->
+              <div class="flex flex-col gap-5">
+                <h3 class="project-title text-xl sm:text-2xl">${project.title}</h3>
+                <p class="project-description text-sm sm:text-base">
+                  ${project.description}
+                </p>
+                <!-- Technologies -->
+                <ul
+                  class="technologies flex gap-3 mt-auto text-sm sm:text-base"
                 >
-                  <span>Source Code</span>
-                  <i
-                    class="ml-2 fa-solid fa-arrow-right transition-transform group-hover:translate-x-1"
-                  ></i>
-                </a>
-                <!-- Live Demo Link -->
-                <a
-                  class="group rounded-lg bg-slate-800 hover:bg-slate-900 px-3 py-1.5 text-sm font-medium text-slate-300 transition-colors duration-300"
-                  href="${project.demo}"
-                  ><span>Live Demo</span
-                  ><i
-                    class="ml-2 fa-solid fa-arrow-right transition-transform duration-300 group-hover:translate-x-1"
-                  ></i
-                ></a>
+                  ${techList}
+                </ul>
+              </div>
+              <div class="flex flex-col gap-4">
+                <!-- Image and buttons -->
+                <img
+                  class="project-image w-full max-w-xs sm:max-w-sm mx-auto"
+                  src="${project.image}"
+                  alt="${project.alt}"
+                  width="300"
+                  height="200"
+                />
+                <div class="flex justify-center gap-4">
+                  <!-- Source Code Link -->
+                  <a
+                    class="group rounded-lg bg-white hover:bg-stone-200 px-3 py-1.5 text-sm font-medium text-black-300 transition-colors duration-300 max-w-xs"
+                    href="${project.link}"
+                  >
+                    <span>Source Code</span>
+                    <i
+                      class="ml-2 fa-solid fa-arrow-right transition-transform group-hover:translate-x-1"
+                    ></i>
+                  </a>
+                  <!-- Live Demo Link -->
+                  <a
+                    class="group rounded-lg bg-slate-800 hover:bg-slate-900 px-3 py-1.5 text-sm font-medium text-slate-300 transition-colors duration-300 max-w-xs"
+                    href="${project.demo}"
+                    ><span>Live Demo</span
+                    ><i
+                      class="ml-2 fa-solid fa-arrow-right transition-transform duration-300 group-hover:translate-x-1"
+                    ></i
+                  ></a>
+                </div>
               </div>
             </div>
-          </div>
-        </div>`;
+          </div>`;
     });
   });
