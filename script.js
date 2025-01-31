@@ -86,7 +86,7 @@ fetch("projects.json")
                 </p>
                 <!-- Technologies -->
                 <ul
-                  class="technologies flex gap-3 mt-auto text-sm sm:text-base"
+                  class="technologies flex flex-wrap gap-3 mt-auto text-sm sm:text-base"
                 >
                   ${techList}
                 </ul>
